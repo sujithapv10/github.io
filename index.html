@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to my Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 2em;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: #343a40;
+            font-size: 1.8em;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ol li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ol li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+            padding: 7px 15px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ol li a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffff;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Cards Section */
+        .card {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card-title {
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #17a2b8;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        strong {
+            color: #343a40;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            nav ol li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Portfolio</h1>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <h2>Hello, I'm Archana B S</h2>
+        <p>Welcome to my personal blog where I share my thoughts and experiences.</p>
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+        <ol>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ol>
+    </nav>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h3>My Experience</h3>
+
+        <div class="card">
+            <div class="card-title">Engineer Intern</div>
+            <p><strong>Company Name:</strong> SupplySafe (RNAlter)</p>
+            <p><strong>Duration:</strong> Sep 2024 - Present</p>
+            <p>Involved in building new vulnerabilities for Linux kernel modules.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Software Developer Intern</div>
+            <p><strong>Company Name:</strong> TechCiti</p>
+            <p><strong>Duration:</strong> Oct 2023 - Nov 2023</p>
+            As a Software Developer Intern, I played a key role in developing the <strong>Heart Disease Prediction</strong> project. My responsibilities included:
+            <ul>
+                <li>Collaborating with experienced software developers to understand algorithms and ensure accurate integration.</li>
+                <li>Writing clean, efficient code in Python, utilizing libraries like Pandas, NumPy, and Scikit-learn.</li>
+                <li>Testing and debugging the application for optimal performance and reliability.</li>
+                <li>Contributing to user interface design to enhance user experience.</li>
+            </ul>
+            <p>This project achieved a prediction accuracy of 97.9%, enabling healthcare professionals to make informed decisions based on user inputs.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Engineer Intern</div>
+            <p><strong>Company Name:</strong> ComedKares</p>
+            <p><strong>Duration:</strong> Oct 2022 - Nov 2022</p>
+            <p>Involved in building a rapid prototype for automatic sensing taps.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h3>My Education</h3>
+
+        <div class="card">
+            <div class="card-title">Bachelor of Engineering</div>
+            <p><strong>Institution:</strong> T John Institute of Technology</p>
+            <p><strong>Duration:</strong> 2021 - Present</p>
+            <p><strong>CGPA:</strong> 8.5</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Pre-University</div>
+            <p><strong>Institution:</strong> Christ Academy</p>
+            <p><strong>Duration:</strong> 2019 - 2021</p>
+            <p><strong>Percentage:</strong> 89.5%</p>
+        </div>
+    </section>
+</body>
+
+</html>
