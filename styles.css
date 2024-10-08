@@ -1,38 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea; /* Lighter background */
+    color: #444;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 h1 {
-    color: #5a5a5a;
+    color: #2c3e50; /* Darker shade for the main heading */
+    text-align: center;
 }
 
 h2 {
-    color: #3a3a3a;
+    color: #34495e; /* Slightly lighter shade for subheadings */
+    margin-top: 20px;
 }
 
 nav {
-    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #2980b9; /* Blue background for the navigation */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ol {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
 }
 
 nav a {
     text-decoration: none;
-    color: #007bff;
-    padding: 5px 10px;
-    border: 1px solid #007bff;
+    color: white; /* White text for links */
+    padding: 10px 15px;
+    margin: 0 10px; /* Spacing between links */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    background-color: #007bff;
+    background-color: #1abc9c; /* Green on hover */
+    color: white; /* Keep text white */
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto; /* Center the content */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for content box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2980b9;
     color: white;
+    position: relative;
 }
